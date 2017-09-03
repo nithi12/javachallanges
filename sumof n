@@ -1,15 +1,13 @@
-import java.io.*;
-import java.util.*;
-public class natural
+#include<stdio.h>
+int main()
 {
-public static void main(String a[])
-{
-int x,i=1;
-int sum=0;
-for(i=1;i<=n;i++)
+int number,sum=0;
+printf("\nenter any integervalue\n");
+scanf("%d",&number);
+for(i=1;i<=number;i++)
 {
 sum=sum+i;
 }
-System.ou.println("the sum is"+sum);
-}
+printf("sum of natural numbers =%d",sum);
+return 0;
 }
