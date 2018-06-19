@@ -6,6 +6,7 @@ public static void main(String arg[])
 {
 Scanner sc=new Scanner(System.in);
 int s=sc.nextInt();
+  int m=s/2;
 int a[]=new int[s];
 if(s==1||s==0)
 {
