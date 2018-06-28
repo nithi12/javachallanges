@@ -5,27 +5,23 @@ class prime
   public static void main(String arg[])
   {
     Scanner sc=new Scanner(System.in);
-    int s= sc.nextInt();
-    int flag=0,m=s/2;
-    if(s==0||s==1)
+    int low=sc.nextInt();
+    int high=sc.nextInt();
+    while(low<high)
     {
-      System.out.print("it's not a prime number");
-    }
-    else
-    {
-      for(int i=0;i<m;i++)
+      boolean flag=false;
+      for(i=2;i<=low/2;++i)
       {
-        if(s%2==0)
-        {
-          System.out.print("not a prime no");
-          flag=1;
-          break;
-        }
+        if(low%i==0)
+        flag=true;
+        break;
       }
-      if(flag==0)
+      if(!flag)
       {
-        System.out.print("yes");
+        System.out.print(low+" ");
+        ++low;
       }
     }
   }
 }
+    
