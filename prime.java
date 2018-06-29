@@ -7,6 +7,7 @@ class prime
     Scanner sc=new Scanner(System.in);
     int low=sc.nextInt();
     int high=sc.nextInt();
+    int i;
     while(low<high)
     {
       boolean flag=false;
