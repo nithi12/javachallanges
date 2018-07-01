@@ -21,10 +21,8 @@ break;
 }
 }
 if(!flag)
-{
 count=count+1;
 ++s;
-}
 }
 System.out.print(count);
 }
